@@ -5,7 +5,7 @@ from database import Base
 from sqlalchemy import String, Column, Boolean, Float, Integer
 
 class Transaction(Base):
-    __tablename = 'tansaction'
+    __tablename__ = 'tansactions'
     
     id = Column(Integer, primary_key=True, index=True)
     amount = Column(Float)
